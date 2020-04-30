@@ -10,6 +10,7 @@ int NUM_THREADS;
 char entries[NUM_ENTRIES][LINE_LENGTH];
 
 int results[NUM_ENTRIES];
+int local_results[NUM_ENTRIES];
 
 int calc_difference(char* line1, char* line2, int line1_length, int line2_length);
 void read_file();
@@ -59,7 +60,7 @@ void main(int argc, char* argv[])
     while(line2 != NULL)
     {
         // printf("Lines %d-%d: %d\n", line1_counter, line2_counter, calc_difference(line1, line2, strlen(line1), strlen(line2)));
-        results[line2_counter] = calc_difference(line1, line2, strlen(line1), strlen(line2));
+        local_results[line2_counter] = calc_difference(line1, line2, strlen(line1), strlen(line2));
         line1_counter++;
         line2_counter++;
         line1 = entries[line1_counter];
@@ -67,7 +68,7 @@ void main(int argc, char* argv[])
     }
 
     gettimeofday(&t4, NULL);
-    MPI_Reduce(entries, entries, NUM_ENTRIES * LINE_LENGTH, MPI_CHAR, MPI_SUM, 0, MPI_COMM_WORLD);
+    MPI_Reduce(local_results, results, NUM_ENTRIES * LINE_LENGTH, MPI_CHAR, MPI_SUM, 0, MPI_COMM_WORLD);
 
     elapsedTime = (t2.tv_sec - t1.tv_sec) * 1000.0; //sec to ms
 	elapsedTime += (t2.tv_usec - t1.tv_usec) / 1000.0; // us to ms
