@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <mpi.h>
+#include "/usr/lib/x86_64-linux-gnu/openmpi/include/mpi.h"
 
 #define NUM_ENTRIES 1000000
 #define LINE_LENGTH 2003
@@ -24,9 +24,9 @@ void main(int argc, char* argv[])
     int numSlots, myVersion = 4;
 
     int i, rc, numTasks, rank, count, dest, source, tag = 1;
-    MPI_STATUS Status;
+    MPI_Status Status;
 
-    rc = MPI_INIT (&argc, &argv);
+    rc = MPI_Init(&argc, &argv);
 
     if(rc != MPI_SUCCESS)
     {
@@ -43,7 +43,7 @@ void main(int argc, char* argv[])
     gettimeofday(&t1, NULL);
 	if(rank == 0 ) 
     {
-		read_file();
+		read_file("/homes/dan/625/wiki_dump.txt");
 	}
 	gettimeofday(&t2, NULL);
 
@@ -97,7 +97,6 @@ void main(int argc, char* argv[])
     // }
 
     MPI_Finalize();
-    return(0);
 }
 
 int calc_difference(char* line1, char* line2, int line1_length, int line2_length)
@@ -116,8 +115,8 @@ int calc_difference(char* line1, char* line2, int line1_length, int line2_length
     return (int)(sum1 - sum2);
 }
 
-void read_file()
-[
+void read_file(char* filename)
+{
     FILE* fp = fopen(filename, "r");
     if(fp == NULL)
     {
@@ -135,4 +134,4 @@ void read_file()
     }
 
     fclose(fp);
-]
+}

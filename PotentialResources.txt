@@ -1,1 +1,3 @@
 https://github.com/rpwilliams/CIS520_Proj4
+https://computing.llnl.gov/tutorials/mpi/#Getting_Started
+https://support.beocat.ksu.edu/BeocatDocs/index.php/Main_Page
