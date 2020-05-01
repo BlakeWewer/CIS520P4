@@ -1,37 +1,6 @@
-  
-#
-# Open Systems Lab
-# http://www.lam-mpi.org/tutorials/
-# Indiana University
-#
-# MPI Tutorial
-# Sample Makefile
-#
+cc=gcc
 
-# "mpicc" adds the directories for the include and lib files.  Hence,
-# -I and -L for MPI stuff is not necessary
-#
-
-CC        = mpicc
-
-#
-# Modify TOPDIR if you use your own include files and library files
-#
-
-PROGRAM   = mpi-prod			# name of the binary
-SRCS      = diffCalc-MPI.c		# source file
-OBJS      = $(SRCS:.c=.o)		# object file
-
-#
-# Targets
-#
-
-default: all
-
-all: $(PROGRAM) 
-
-$(PROGRAM): $(OBJS)
-	$(CC) -m32 $(OBJS) -o $(PROGRAM) $(LDFLAGS)
-
+all: diffCalc-MPI.c
+	mpicc -o mpi-prod diffCalc-MPI.c
 clean:
-	/bin/rm -f $(OBJS) $(PROGRAM)
+	$(RM) mpi-prod
