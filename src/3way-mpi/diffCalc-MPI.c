@@ -1,8 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "/usr/lib/x86_64-linux-gnu/openmpi/include/mpi.h"
-#include "sys/time.h"
+#include <mpi.h>
+// #include "/usr/lib/x86_64-linux-gnu/openmpi/include/mpi.h"
+// #include "sys/time.h"
 
 #define NUM_ENTRIES 1000000
 #define LINE_LENGTH 2003
@@ -44,8 +45,8 @@ void main(int argc, char* argv[])
     gettimeofday(&t1, NULL);
 	if(rank == 0 ) 
     {
-		// read_file("../../home/d/dan/625/wiki_dump.txt");
-        read_file("src/base/test.txt");
+		read_file("/homes/dan/625/wiki_dump.txt");
+        // read_file("src/base/test.txt");
 	}
 	gettimeofday(&t2, NULL);
 
@@ -122,7 +123,7 @@ void read_file(char* filename)
     FILE* fp = fopen(filename, "r");
     if(fp == NULL)
     {
-        perror("Unable to open file!");
+        perror("Unable to open file!  File is ");
         exit(1);
     }
 
