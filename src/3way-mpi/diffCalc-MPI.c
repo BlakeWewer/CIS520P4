@@ -121,7 +121,7 @@ void read_file(char* filename)
     FILE* fp = fopen(filename, "r");
     if(fp == NULL)
     {
-        perror("Unable to open file!  File is ");
+        perror("Unable to open file!  File is - ");
         exit(1);
     }
 
