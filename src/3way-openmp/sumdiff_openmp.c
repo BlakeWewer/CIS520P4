@@ -21,14 +21,17 @@ int main(void)
     double elapsed_time;
     int my_version = 2;
 
+    // Start time of reading file
     gettimeofday(&t1, NULL);
 
     read_file();
 
+    // End time of reading file
     gettimeofday(&t2, NULL);
 
-    omp_set_num_threads(NUM_THREADS);
+    // omp_set_num_threads(NUM_THREADS);
 
+    // Start time of parallel code
     gettimeofday(&t3, NULL);
 
     #pragma omp parallel
@@ -36,14 +39,17 @@ int main(void)
         line_diff(omp_get_thread_num());
     }
 
+    // End time of parallel code
     gettimeofday(&t4, NULL);
 
+    // Calculate and print time to read file
     elapsed_time = (t2.tv_sec - t1.tv_sec) * 1000.0;
     elapsed_time += (t2.tv_usec - t1.tv_usec) / 1000.0;
     printf("Time to read file: %f\n", elapsed_time);
 
+    // Calculate and print time to calculate line differences
     elapsed_time = (t4.tv_sec - t3.tv_sec) * 1000.0;
-    elapsed_time = (t4.tv_usec - t3.tv_usec) / 1000.0;
+    elapsed_time += (t4.tv_usec - t3.tv_usec) / 1000.0;
     printf("Time to calculate difference: %f\n", elapsed_time);
 
     printf("DATA, %d, %s, %f\n", my_version, getenv("SLURM_CPUS_ON_NODE"), elapsed_time);
