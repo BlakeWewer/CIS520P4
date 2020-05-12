@@ -1,11 +1,5 @@
 build: sumdiff_pthread.c
-	gcc -pthread sumdiff_pthread.c -o sumdiff
-
-run: build
-	./sumdiff
-
-test: build
-	./sumdiff > test_results.txt
+	gcc -pthread -o pthread-prod sumdiff_pthread.c
 
 clean:
-	rm sumdiff
+	$(RM) sumdiff

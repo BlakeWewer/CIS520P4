@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define NUM_THREADS 4
+#define NUM_THREADS 16
 #define NUM_LINES 1000000
 
 char *lines[NUM_LINES];
@@ -29,7 +29,7 @@ int main(void)
     // End time of reading file
     gettimeofday(&t2, NULL);
 
-    // omp_set_num_threads(NUM_THREADS);
+    omp_set_num_threads(NUM_THREADS);
 
     // Start time of parallel code
     gettimeofday(&t3, NULL);
