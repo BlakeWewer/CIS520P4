@@ -4,7 +4,7 @@
 #include <string.h>
 
 #define NUM_THREADS 4
-#define NUM_LINES 20
+#define NUM_LINES 1000000
 
 char *lines[NUM_LINES];
 int line_diffs[NUM_LINES - 1];
