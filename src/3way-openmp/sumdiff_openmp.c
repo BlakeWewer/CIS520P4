@@ -61,7 +61,8 @@ void read_file()
         exit(EXIT_FAILURE);
     }
 
-    for (size_t i = 0; i < NUM_LINES; i++)
+    size_t i;
+    for (i = 0; i < NUM_LINES; i++)
     {
         char *line = NULL;
         size_t len;
@@ -109,7 +110,8 @@ int line_sum(size_t line_num)
     char *line = lines[line_num];
     int result = 0;
 
-    for (size_t i = 0; i < strlen(line); i++)
+    size_t i;
+    for (i = 0; i < strlen(line); i++)
     {
         result += (int)line[i];
     }
@@ -119,7 +121,8 @@ int line_sum(size_t line_num)
 
 void free_lines()
 {
-    for (size_t i = 0; i < NUM_LINES; i++)
+    size_t i;
+    for (i = 0; i < NUM_LINES; i++)
     {
         free(lines[i]);
     }
@@ -127,7 +130,8 @@ void free_lines()
 
 void print_diffs()
 {
-    for (size_t i = 0; i < NUM_LINES - 1; i++)
+    size_t i;
+    for (i = 0; i < NUM_LINES - 1; i++)
     {
         printf("%zu-%zu: %d\n", i, i + 1, line_diffs[i]);
     }
