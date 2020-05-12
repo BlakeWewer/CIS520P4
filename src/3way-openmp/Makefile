@@ -1,11 +1,5 @@
 build: sumdiff_openmp.c
-	gcc -fopenmp sumdiff_openmp.c -o sumdiff
-
-run: build
-	./sumdiff
-
-test: build
-	./sumdiff > test_results.txt
+	gcc -fopenmp -o openmp-prod sumdiff_openmp.c
 
 clean:
-	rm sumdiff
+	$(RM) openmp-prod

@@ -17,22 +17,43 @@ void print_diffs();
 
 int main(void)
 {
-    omp_set_num_threads(NUM_THREADS);
+    struct timeval t1, t2, t3, t4;
+    double elapsed_time;
+    int my_version = 2;
+
+    gettimeofday(&t1, NULL);
 
     read_file();
+
+    gettimeofday(&t2, NULL);
+
+    omp_set_num_threads(NUM_THREADS);
+
+    gettimeofday(&t3, NULL);
 
     #pragma omp parallel
     {
         line_diff(omp_get_thread_num());
     }
 
+    gettimeofday(&t4, NULL);
+
+    elapsed_time = (t2.tv_sec - t1.tv_sec) * 1000.0;
+    elapsed_time += (t2.tv_usec - t1.tv_usec) / 1000.0;
+    printf("Time to read file: %f\n", elapsed_time);
+
+    elapsed_time = (t4.tv_sec - t3.tv_sec) * 1000.0;
+    elapsed_time = (t4.tv_usec - t3.tv_usec) / 1000.0;
+    printf("Time to calculate difference: %f\n", elapsed_time);
+
+    printf("DATA, %d, %s, %f\n", my_version, getenv("SLURM_CPUS_ON_NODE"), elapsed_time);
+
     free_lines();
-    print_diffs();
 }
 
 void read_file()
 {
-    FILE *fp = fopen("test.txt", "r");
+    FILE *fp = fopen("/homes/dan/625/wiki_dump.txt", "r");
 
     if (fp == NULL)
     {
