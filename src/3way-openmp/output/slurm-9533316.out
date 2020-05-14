@@ -1,0 +1,19 @@
+id = 1 | start = 62500 | end = 125000
+id = 15 | start = 937500 | end = 1000000
+id = 2 | start = 125000 | end = 187500
+id = 0 | start = 0 | end = 62500
+id = 3 | start = 187500 | end = 250000
+id = 4 | start = 250000 | end = 312500
+id = 5 | start = 312500 | end = 375000
+id = 6 | start = 375000 | end = 437500
+id = 7 | start = 437500 | end = 500000
+id = 8 | start = 500000 | end = 562500
+id = 9 | start = 562500 | end = 625000
+id = 10 | start = 625000 | end = 687500
+id = 11 | start = 687500 | end = 750000
+id = 12 | start = 750000 | end = 812500
+id = 13 | start = 812500 | end = 875000
+id = 14 | start = 875000 | end = 937500
+Time to read file: 3582.447000
+Time to calculate difference: 55449.471000
+DATA, 2, 2, 55449.471000
