@@ -1,0 +1,51 @@
+size = 4 - rank = 0
+size = 4 - rank = 1
+size = 4 - rank = 2
+size = 4 - rank = 3
+[mage09:25702] *** Process received signal ***
+[mage09:25702] Signal: Segmentation fault (11)
+[mage09:25702] Signal code: Address not mapped (1)
+[mage09:25702] Failing at address: 0x781f8230
+[mage09:25702] [ 0] /lib64/libc.so.6(+0x36280)[0x7efffd039280]
+[mage09:25702] [ 1] /homes/bewewer/proj4/CIS520P4/src/3way-mpi/mpi-prod[0x40254b]
+[mage09:25702] [ 2] /lib64/libc.so.6(__libc_start_main+0xf5)[0x7efffd0253d5]
+[mage09:25702] [ 3] /homes/bewewer/proj4/CIS520P4/src/3way-mpi/mpi-prod[0x4022a9]
+[mage09:25702] *** End of error message ***
+[mage09:25707] *** Process received signal ***
+[mage09:25707] Signal: Segmentation fault (11)
+[mage09:25707] Signal code: Address not mapped (1)
+[mage09:25707] Failing at address: 0x781f8230
+[mage09:25707] [ 0] /lib64/libc.so.6(+0x36280)[0x7f7dca7de280]
+[mage09:25707] [ 1] /homes/bewewer/proj4/CIS520P4/src/3way-mpi/mpi-prod[0x40254b]
+[mage09:25707] [ 2] /lib64/libc.so.6(__libc_start_main+0xf5)[0x7f7dca7ca3d5]
+[mage09:25707] [ 3] /homes/bewewer/proj4/CIS520P4/src/3way-mpi/mpi-prod[0x4022a9]
+[mage09:25707] *** End of error message ***
+[mage09:25706] *** Process received signal ***
+[mage09:25706] Signal: Segmentation fault (11)
+[mage09:25706] Signal code: Address not mapped (1)
+[mage09:25706] Failing at address: 0x781f8230
+[mage09:25706] [ 0] /lib64/libc.so.6(+0x36280)[0x7f5960c3c280]
+[mage09:25706] [ 1] /homes/bewewer/proj4/CIS520P4/src/3way-mpi/mpi-prod[0x40254b]
+[mage09:25706] [ 2] /lib64/libc.so.6(__libc_start_main+0xf5)[0x7f5960c283d5]
+[mage09:25706] [ 3] /homes/bewewer/proj4/CIS520P4/src/3way-mpi/mpi-prod[0x4022a9]
+[mage09:25706] *** End of error message ***
+[mage09:25704] *** Process received signal ***
+[mage09:25704] Signal: Segmentation fault (11)
+[mage09:25704] Signal code: Address not mapped (1)
+[mage09:25704] Failing at address: 0x781f8230
+[mage09:25704] [ 0] /lib64/libc.so.6(+0x36280)[0x7f20c6a04280]
+[mage09:25704] [ 1] /homes/bewewer/proj4/CIS520P4/src/3way-mpi/mpi-prod[0x40254b]
+[mage09:25704] [ 2] /lib64/libc.so.6(__libc_start_main+0xf5)[0x7f20c69f03d5]
+[mage09:25704] [ 3] /homes/bewewer/proj4/CIS520P4/src/3way-mpi/mpi-prod[0x4022a9]
+[mage09:25704] *** End of error message ***
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[62927,1],0]
+  Exit code:    11
+--------------------------------------------------------------------------
