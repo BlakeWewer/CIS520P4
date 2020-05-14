@@ -1,13 +1,13 @@
 size = 1 - rank = 0
-[mage09:41006] *** Process received signal ***
-[mage09:41006] Signal: Segmentation fault (11)
-[mage09:41006] Signal code: Address not mapped (1)
-[mage09:41006] Failing at address: 0x781f8230
-[mage09:41006] [ 0] /lib64/libc.so.6(+0x36280)[0x7f66dc3e6280]
-[mage09:41006] [ 1] /homes/bewewer/proj4/CIS520P4/src/3way-mpi/mpi-prod[0x40254b]
-[mage09:41006] [ 2] /lib64/libc.so.6(__libc_start_main+0xf5)[0x7f66dc3d23d5]
-[mage09:41006] [ 3] /homes/bewewer/proj4/CIS520P4/src/3way-mpi/mpi-prod[0x4022a9]
-[mage09:41006] *** End of error message ***
+[mage09:48428] *** Process received signal ***
+[mage09:48428] Signal: Segmentation fault (11)
+[mage09:48428] Signal code: Address not mapped (1)
+[mage09:48428] Failing at address: 0x781f8230
+[mage09:48428] [ 0] /lib64/libc.so.6(+0x36280)[0x7f635c8f2280]
+[mage09:48428] [ 1] /homes/bewewer/proj4/CIS520P4/src/3way-mpi/mpi-prod[0x40254b]
+[mage09:48428] [ 2] /lib64/libc.so.6(__libc_start_main+0xf5)[0x7f635c8de3d5]
+[mage09:48428] [ 3] /homes/bewewer/proj4/CIS520P4/src/3way-mpi/mpi-prod[0x4022a9]
+[mage09:48428] *** End of error message ***
 --------------------------------------------------------------------------
 Primary job  terminated normally, but 1 process returned
 a non-zero exit code. Per user-direction, the job has been aborted.
@@ -16,6 +16,6 @@ a non-zero exit code. Per user-direction, the job has been aborted.
 mpirun detected that one or more processes exited with non-zero status, thus causing
 the job to be terminated. The first process to do so was:
 
-  Process name: [[12752,1],0]
+  Process name: [[11505,1],0]
   Exit code:    11
 --------------------------------------------------------------------------

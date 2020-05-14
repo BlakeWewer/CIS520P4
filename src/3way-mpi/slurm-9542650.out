@@ -1,0 +1,42 @@
+size = 4 - rank = 0
+size = 4 - rank = 1
+size = 4 - rank = 2
+size = 4 - rank = 3
+[mage09:48433] *** Process received signal ***
+[mage09:48433] Signal: Segmentation fault (11)
+[mage09:48433] Signal code: Address not mapped (1)
+[mage09:48433] Failing at address: 0x781f8230
+[mage09:48433] [ 0] /lib64/libc.so.6(+0x36280)[0x7f7bad7ea280]
+[mage09:48433] [ 1] /homes/bewewer/proj4/CIS520P4/src/3way-mpi/mpi-prod[0x40254b]
+[mage09:48433] [ 2] /lib64/libc.so.6(__libc_start_main+0xf5)[0x7f7bad7d63d5]
+[mage09:48433] [ 3] /homes/bewewer/proj4/CIS520P4/src/3way-mpi/mpi-prod[0x4022a9]
+[mage09:48433] *** End of error message ***
+[mage09:48434] *** Process received signal ***
+[mage09:48434] Signal: Segmentation fault (11)
+[mage09:48434] Signal code: Address not mapped (1)
+[mage09:48434] Failing at address: 0x781f8230
+[mage09:48434] [ 0] /lib64/libc.so.6(+0x36280)[0x7f55cee1f280]
+[mage09:48434] [ 1] /homes/bewewer/proj4/CIS520P4/src/3way-mpi/mpi-prod[0x40254b]
+[mage09:48434] [ 2] /lib64/libc.so.6(__libc_start_main+0xf5)[0x7f55cee0b3d5]
+[mage09:48434] [ 3] /homes/bewewer/proj4/CIS520P4/src/3way-mpi/mpi-prod[0x4022a9]
+[mage09:48434] *** End of error message ***
+[mage09:48431] *** Process received signal ***
+[mage09:48431] Signal: Segmentation fault (11)
+[mage09:48431] Signal code: Address not mapped (1)
+[mage09:48431] Failing at address: 0x781f8230
+[mage09:48431] [ 0] /lib64/libc.so.6(+0x36280)[0x7f71e0de5280]
+[mage09:48431] [ 1] /homes/bewewer/proj4/CIS520P4/src/3way-mpi/mpi-prod[0x40254b]
+[mage09:48431] [ 2] /lib64/libc.so.6(__libc_start_main+0xf5)[0x7f71e0dd13d5]
+[mage09:48431] [ 3] /homes/bewewer/proj4/CIS520P4/src/3way-mpi/mpi-prod[0x4022a9]
+[mage09:48431] *** End of error message ***
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[11506,1],2]
+  Exit code:    11
+--------------------------------------------------------------------------

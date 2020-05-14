@@ -1,0 +1,91 @@
+size = 8 - rank = 0
+size = 8 - rank = 1
+size = 8 - rank = 2
+size = 8 - rank = 3
+size = 8 - rank = 4
+size = 8 - rank = 5
+size = 8 - rank = 6
+size = 8 - rank = 7
+[hero09:09620] *** Process received signal ***
+[hero09:09620] Signal: Segmentation fault (11)
+[hero09:09620] Signal code: Address not mapped (1)
+[hero09:09620] Failing at address: 0x781f8230
+[hero09:09620] [ 0] /lib64/libc.so.6(+0x36280)[0x7f187d156280]
+[hero09:09620] [ 1] /homes/bewewer/proj4/CIS520P4/src/3way-mpi/mpi-prod[0x40254b]
+[hero09:09620] [ 2] /lib64/libc.so.6(__libc_start_main+0xf5)[0x7f187d1423d5]
+[hero09:09620] [ 3] /homes/bewewer/proj4/CIS520P4/src/3way-mpi/mpi-prod[0x4022a9]
+[hero09:09620] *** End of error message ***
+[hero09:09622] *** Process received signal ***
+[hero09:09622] Signal: Segmentation fault (11)
+[hero09:09622] Signal code: Address not mapped (1)
+[hero09:09622] Failing at address: 0x781f8230
+[hero09:09622] [ 0] /lib64/libc.so.6(+0x36280)[0x7fc4ff25c280]
+[hero09:09622] [ 1] /homes/bewewer/proj4/CIS520P4/src/3way-mpi/mpi-prod[0x40254b]
+[hero09:09622] [ 2] /lib64/libc.so.6(__libc_start_main+0xf5)[0x7fc4ff2483d5]
+[hero09:09622] [ 3] /homes/bewewer/proj4/CIS520P4/src/3way-mpi/mpi-prod[0x4022a9]
+[hero09:09622] *** End of error message ***
+[hero09:09627] *** Process received signal ***
+[hero09:09627] Signal: Segmentation fault (11)
+[hero09:09627] Signal code: Address not mapped (1)
+[hero09:09627] Failing at address: 0x781f8230
+[hero09:09627] [ 0] /lib64/libc.so.6(+0x36280)[0x7f2d9c94d280]
+[hero09:09627] [ 1] /homes/bewewer/proj4/CIS520P4/src/3way-mpi/mpi-prod[0x40254b]
+[hero09:09627] [ 2] /lib64/libc.so.6(__libc_start_main+0xf5)[0x7f2d9c9393d5]
+[hero09:09627] [ 3] /homes/bewewer/proj4/CIS520P4/src/3way-mpi/mpi-prod[0x4022a9]
+[hero09:09627] *** End of error message ***
+[hero09:09625] *** Process received signal ***
+[hero09:09625] Signal: Segmentation fault (11)
+[hero09:09625] Signal code: Address not mapped (1)
+[hero09:09625] Failing at address: 0x781f8230
+[hero09:09625] [ 0] /lib64/libc.so.6(+0x36280)[0x7fa1ca76e280]
+[hero09:09625] [ 1] /homes/bewewer/proj4/CIS520P4/src/3way-mpi/mpi-prod[0x40254b]
+[hero09:09625] [ 2] /lib64/libc.so.6(__libc_start_main+0xf5)[0x7fa1ca75a3d5]
+[hero09:09625] [ 3] /homes/bewewer/proj4/CIS520P4/src/3way-mpi/mpi-prod[0x4022a9]
+[hero09:09625] *** End of error message ***
+[hero09:09626] *** Process received signal ***
+[hero09:09626] Signal: Segmentation fault (11)
+[hero09:09626] Signal code: Address not mapped (1)
+[hero09:09626] Failing at address: 0x781f8230
+[hero09:09626] [ 0] /lib64/libc.so.6(+0x36280)[0x7fe97dc3a280]
+[hero09:09626] [ 1] /homes/bewewer/proj4/CIS520P4/src/3way-mpi/mpi-prod[0x40254b]
+[hero09:09626] [ 2] /lib64/libc.so.6(__libc_start_main+0xf5)[0x7fe97dc263d5]
+[hero09:09626] [ 3] /homes/bewewer/proj4/CIS520P4/src/3way-mpi/mpi-prod[0x4022a9]
+[hero09:09626] *** End of error message ***
+[hero09:09623] *** Process received signal ***
+[hero09:09623] Signal: Segmentation fault (11)
+[hero09:09623] Signal code: Address not mapped (1)
+[hero09:09623] Failing at address: 0x781f8230
+[hero09:09623] [ 0] /lib64/libc.so.6(+0x36280)[0x7f4b22674280]
+[hero09:09623] [ 1] /homes/bewewer/proj4/CIS520P4/src/3way-mpi/mpi-prod[0x40254b]
+[hero09:09623] [ 2] /lib64/libc.so.6(__libc_start_main+0xf5)[0x7f4b226603d5]
+[hero09:09623] [ 3] /homes/bewewer/proj4/CIS520P4/src/3way-mpi/mpi-prod[0x4022a9]
+[hero09:09623] *** End of error message ***
+[hero09:09624] *** Process received signal ***
+[hero09:09624] Signal: Segmentation fault (11)
+[hero09:09624] Signal code: Address not mapped (1)
+[hero09:09624] Failing at address: 0x781f8230
+[hero09:09624] [ 0] /lib64/libc.so.6(+0x36280)[0x7f3d9a93e280]
+[hero09:09624] [ 1] /homes/bewewer/proj4/CIS520P4/src/3way-mpi/mpi-prod[0x40254b]
+[hero09:09624] [ 2] /lib64/libc.so.6(__libc_start_main+0xf5)[0x7f3d9a92a3d5]
+[hero09:09624] [ 3] /homes/bewewer/proj4/CIS520P4/src/3way-mpi/mpi-prod[0x4022a9]
+[hero09:09624] *** End of error message ***
+[hero09:09621] *** Process received signal ***
+[hero09:09621] Signal: Segmentation fault (11)
+[hero09:09621] Signal code: Address not mapped (1)
+[hero09:09621] Failing at address: 0x781f8230
+[hero09:09621] [ 0] /lib64/libc.so.6(+0x36280)[0x7f1e7da48280]
+[hero09:09621] [ 1] /homes/bewewer/proj4/CIS520P4/src/3way-mpi/mpi-prod[0x40254b]
+[hero09:09621] [ 2] /lib64/libc.so.6(__libc_start_main+0xf5)[0x7f1e7da343d5]
+[hero09:09621] [ 3] /homes/bewewer/proj4/CIS520P4/src/3way-mpi/mpi-prod[0x4022a9]
+[hero09:09621] *** End of error message ***
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[65306,1],1]
+  Exit code:    11
+--------------------------------------------------------------------------
