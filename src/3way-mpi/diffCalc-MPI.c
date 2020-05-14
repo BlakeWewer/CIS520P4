@@ -60,7 +60,7 @@ void main(int argc, char* argv[])
     char* line2 = entries[line2_counter];
     while(line2 != NULL)
     {
-        printf("Lines %d-%d: %d\n", line1_counter, line2_counter, calc_difference(line1, line2, strlen(line1), strlen(line2)));
+        //printf("Lines %d-%d: %d\n", line1_counter, line2_counter, calc_difference(line1, line2, strlen(line1), strlen(line2)));
         local_results[line2_counter] = calc_difference(line1, line2, strlen(line1), strlen(line2));
         line1_counter++;
         line2_counter++;
